@@ -1,0 +1,35 @@
+import java.util.*;
+public class Binario {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Ingrese un número");
+		int decimal;
+		decimal = sc.nextInt();
+		
+		if (decimal <= 15){
+			if (decimal >=0){
+				String respuesta;
+				respuesta = Binario (decimal);
+				System.out.print("El número en binario es " + respuesta);
+			}
+			else {
+				System.out.print("error");
+			}
+		}
+		else {
+			System.out.print("error");
+		}
+	}
+	public static String Binario (int x){
+		int residuo;
+		String binario = "";
+		 for (int i = 0; i < 4; i++){
+			residuo = x % 2;
+			binario = residuo + binario;
+			x = x / 2;
+		 }
+		return binario;
+	}
+ }
