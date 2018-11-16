@@ -1,0 +1,18 @@
+public class ManejoString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String K = new String("hola");
+		String G = new String("pala");
+        System.out.println(K.length()); //número de caracteres de una cadena
+        System.out.println(K.toUpperCase()); //transforma la cadena en mayúscula
+		System.out.println(K.contains("a")); //True or false: si existe ese caracter o cadena dentro de la variable K
+	    System.out.println(K.contains("j"));
+	    System.out.println("Enter a link");
+	    String n = new String("Maryplop.com");
+	    System.out.println(n.replace(".", " dot "));
+	    
+	}
+
+}
