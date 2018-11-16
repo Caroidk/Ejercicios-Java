@@ -1,0 +1,33 @@
+
+public class Librerias {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//definiendo las variables
+		int A = 9;
+		int B = 24;
+		double C = 6.8;
+		double D = 3.45;
+		boolean E = true;
+		boolean F = false;
+		
+		//sacando la raíz
+		double r = Math.sqrt(A);
+		double ra = Math.sqrt(B);
+		double rai = Math.sqrt(C);
+		double raiz = Math.sqrt(D);
+		System.out.println("Raíces: " + r + ", " + ra + ", " + rai + ", " + raiz + ".\n");
+		
+		//potencia
+		double p = Math.pow(B, D);
+		double po = Math.pow(C, A);
+		double pot = Math.pow(D, 2);
+		double pote = Math.pow(C, D);
+		System.out.println("Potencias: " + p + ", " + po + ", " + pot + ", " + pote + ".\n");
+		
+		
+		
+	}
+
+}
