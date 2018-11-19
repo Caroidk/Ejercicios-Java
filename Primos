@@ -1,0 +1,34 @@
+import java.util.*;
+public class Primo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//función 4
+		Scanner leer = new Scanner(System.in);
+		double n;
+		String resultado;
+		System.out.println("Ingrese número");
+		n = leer.nextInt();
+		resultado = Primo(n);
+		System.out.println(resultado);
+	}
+	
+	public static String Primo (double x){ //devolverá si el número ingresado es primo o no
+		
+
+		double r;
+		int aux = 0;
+		if (x>2){
+			for (int i=1; i<=x; i++){
+				r = x%i;
+				if (r == 0){
+					aux = aux+1;
+				}}
+			if (aux == 2){return "El número ingresado es primo";}
+			else{return "El número ingresado no es primo";}
+		}
+		else{return "El número ingresado no es primo";}
+	}
+
+}
