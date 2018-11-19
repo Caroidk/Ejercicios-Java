@@ -1,0 +1,31 @@
+import java.util.*;
+public class Monedas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Función 2
+		Scanner leer = new Scanner(System.in);
+		String moneda;
+		double cantidad;
+		double resultado;
+		System.out.println("Ingrese cantidad");
+		cantidad = leer.nextDouble();
+		System.out.println("Ingrese moneda que desea convertir: EUR, USD, YEN, SOL");
+		moneda = leer.nextLine();
+		resultado = conversion(cantidad, moneda);
+		System.out.println("La conversión es " + resultado);
+		
+	}
+	
+	public static double conversion(double x, String y){
+		switch (y){
+		case "EUR" : x = x * 770.34; return x;
+		case "USD" : x = x * 669; return x;
+		case "SOL" : x = x * 198.40; return x;
+		case "YEN" : x = x * 5.95; return x;
+		default : return -1;
+		}
+	}
+
+}
