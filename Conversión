@@ -1,5 +1,6 @@
+
 import java.util.*;
-public class Monedas {
+public class Funciones {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -12,18 +13,19 @@ public class Monedas {
 		System.out.println("Ingrese cantidad");
 		cantidad = leer.nextDouble();
 		System.out.println("Ingrese moneda que desea convertir: EUR, USD, YEN, SOL");
-		moneda = leer.nextLine();
+		moneda = leer.next();
 		resultado = conversion(cantidad, moneda);
 		System.out.println("La conversión es " + resultado);
 		
 	}
 	
 	public static double conversion(double x, String y){
+		double c;
 		switch (y){
-		case "EUR" : x = x * 770.34; return x;
-		case "USD" : x = x * 669; return x;
-		case "SOL" : x = x * 198.40; return x;
-		case "YEN" : x = x * 5.95; return x;
+		case "EUR" : c = x * 770.34; return c;
+		case "USD" : c = x * 669; return c;
+		case "SOL" : c = x * 198.40; return c;
+		case "YEN" : c = x * 5.95; return c;
 		default : return -1;
 		}
 	}
