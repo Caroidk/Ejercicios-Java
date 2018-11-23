@@ -1,0 +1,24 @@
+import java.util.*;
+public class Piramide {
+private static Scanner leer;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//crea una pirámide de asteriscos según número ingresado
+		leer = new Scanner(System.in);
+		int aux;
+		String A = "";
+		System.out.println("Ingrese un número natural");
+		int num = leer.nextInt();
+		String[] Aster = new String [num];
+		for (int i=0; i<num; i++) {
+			Aster[i] = "*" + A;
+			A ="*"+A; 
+		}
+		for (int j=0; j<num; j++) {
+			aux = num-j;
+			System.out.print(Aster[aux]+"\n");
+		}
+	
+	}
+}
