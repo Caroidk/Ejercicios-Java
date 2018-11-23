@@ -1,0 +1,40 @@
+import java.util.*;
+public class Ordenamiento {
+private static Scanner leer;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//ordenar tres datos de mayor a menor
+		leer = new Scanner(System.in);
+		int a; int b; int c;
+		System.out.println("ingrese números que desea ordenar");
+		a = leer.nextInt();
+		b = leer.nextInt();
+		c = leer.nextInt();
+		int d = a-b; int e = b-c; int f = a-c;
+		String g = new String ("Existe igualdad");
+		if (a==b) {System.out.println(g);}
+		else {
+			if (b==c) {System.out.println(g);}
+			else {
+				if (c==a) {System.out.println(g);}
+				else {
+					if (d>0) {
+						if (e>0) {System.out.println(a+">"+b+">"+c);}
+						else {
+							if (f>0) {System.out.println(a+">"+c+">"+b);}
+							else {System.out.println(c+">"+a+">"+b);}
+							
+						}
+					} else {
+						if (e>0) {
+							if (f<0) {System.out.println(b+">"+c+">"+a);}
+							else {System.out.println(b+">"+a+">"+c);}	
+							} else {System.out.println(c+">"+b+">"+a);}
+						}
+					}
+				}
+			}
+		}
+	}
+
