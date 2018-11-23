@@ -1,0 +1,19 @@
+import java.util.*;
+public class Wea {
+private static Scanner leer;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		leer = new Scanner(System.in);
+		int a; int b; int c;
+		System.out.println("Ingrese tres números");
+		a = leer.nextInt();
+		b = leer.nextInt();
+		c = leer.nextInt();
+		if (a<0) {
+			System.out.println("El producto de los números es "+(a*b*c));}
+		else {System.out.println("La suma de los números es "+(a+b+c));}
+	}
+
+}
